@@ -1,7 +1,7 @@
 const { promiseTheaterIXX, promiseTheaterVGC } = require("./external.js");
 
 // TODO: Buat fungsi promiseOutput sesuai ketentuan readme
-(promiseOutput = async (emosi) => {
+const promiseOutput = async (emosi) => {
   try {
     const theatherIXX = await promiseTheaterIXX();
     const theaterVGC = await promiseTheaterVGC();
@@ -14,7 +14,7 @@ const { promiseTheaterIXX, promiseTheaterVGC } = require("./external.js");
   } catch (error) {
     console.log(error);
   }
-})();
+};
 
 module.exports = {
   promiseOutput,
